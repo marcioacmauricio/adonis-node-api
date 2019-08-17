@@ -20,3 +20,4 @@ Route.get('/', () => {
 })
 Route.post('/user', 'UserController.create')
 Route.post('/login', 'UserController.login')
+Route.resource('tarefa', 'TarefaController').apiOnly().middleware('auth')
