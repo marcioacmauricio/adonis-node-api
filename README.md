@@ -26,3 +26,13 @@ Run the following command to run startup migrations.
 ```js
 adonis migration:run
 ```
+### Database
+Install postgres as docker
+```
+sudo docker pull postgres
+```
+Start database postgres
+```
+sudo docker run -d -p 5400:5432 --name mypostgresdb -e POSTGRES_PASSWORD=123123 postgres
+```
+Create databse api after start
